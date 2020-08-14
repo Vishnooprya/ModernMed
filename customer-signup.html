@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <title>Customer Registration</title>
+    <script type="text/javascript" src="js/customer-signup.js">
+
+    </script>
+    <style media="screen">
+
+
+      body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background:#fff;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: ##6accd9;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 10%;
+    padding: 60px;
+    color: white;
+}
+
+.login-main-text h2{
+    font-weight: 500;
+}
+
+.btn-black{
+    background-color: #6accd9 !important;
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="sidenav" style="background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('img/pat.jpg');background-repeat:no-repeat;background-size:cover;">
+    <img src="img/logo.png" class="img-rounded" alt="" style="margin:20px;" >
+
+         <div class="login-main-text" >
+            <h2 style="font-size:40px">New Customer<br> Registration</h2>
+            <p>Login or register from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form  action="http://localhost/WEB/php/customer-signup.php" method="post" enctype="multipart/form-data">
+                 <div class="form-group">
+                   <label>Full Name</label>
+                   <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name">
+                 </div>
+
+
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                     <label>Confirm Password</label>
+                     <input type="password" id="confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm Password">
+                  </div>
+
+                  <div class="form-group">
+                     <label>Date Of Birth</label>
+                     <input type="date" name="dob" id="dob" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Gender :  </label>
+                    <label class="radio-inline">
+        <input type="radio" name="gender" id="g1" value="Male"checked>Male
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="gender" id="g2" value="Female">Female
+      </label>
+                  </div>
+                  <div class="form-group">
+                     <label>House/Building Number-Street Name</label>
+                     <input type="text" class="form-control" name="houseno" id="houseno" placeholder="House/Building Number-Street Name">
+                  </div>
+                  <div class="form-group">
+                     <label>District</label>
+                     <input type="text" class="form-control" name="district" id="district" placeholder="Street Name">
+                  </div>
+                  <div class="form-group" >
+                    <label>State</label>
+                    <select name="state" id="state" class="form-control">
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+  <option value="Assam">Assam</option>
+  <option value="Bihar">Bihar</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Chhattisgarh">Chhattisgarh</option>
+  <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+  <option value="Daman and Diu">Daman and Diu</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Lakshadweep">Lakshadweep</option>
+  <option value="Puducherry">Puducherry</option>
+  <option value="Goa">Goa</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Haryana">Haryana</option>
+  <option value="Himachal Pradesh">Himachal Pradesh</option>
+  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+  <option value="Jharkhand">Jharkhand</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Madhya Pradesh">Madhya Pradesh</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Manipur">Manipur</option>
+  <option value="Meghalaya">Meghalaya</option>
+  <option value="Mizoram">Mizoram</option>
+  <option value="Nagaland">Nagaland</option>
+  <option value="Odisha">Odisha</option>
+  <option value="Punjab">Punjab</option>
+  <option value="Rajasthan">Rajasthan</option>
+  <option value="Sikkim">Sikkim</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Telangana">Telangana</option>
+  <option value="Tripura">Tripura</option>
+  <option value="Uttar Pradesh">Uttar Pradesh</option>
+  <option value="Uttarakhand">Uttarakhand</option>
+  <option value="West Bengal">West Bengal</option>
+  </select>
+
+                  </div>
+
+                  <div class="form-group">
+                     <label>Pincode</label>
+                     <input type="text" name="pincode" id="pincode" class="form-control" placeholder="Pincode">
+                  </div>
+
+
+                  <div class="form-group">
+                     <label>Email</label>
+                     <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                     <label>Phone Number</label>
+                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group">
+                     <label>Upload Photo</label>
+                     <input type="file" name="photo" id="photo" class="form-control" placeholder="Password">
+                  </div>
+                  <!-- <button type="submit" class="btn btn-black">Login</button> -->
+                  <button type="submit" class="btn btn-black" onclick="validate();">Register</button>
+<!-- onclick="validate();return false; -->
+
+               </form>
+
+               <!-- <p>Don't have an account? <a href="#">Register Here</a></p> -->
+            </div>
+            <div class="" style="padding:25px">
+
+            </div>
+         </div>
+      </div>
+
+  </body>
+</html>

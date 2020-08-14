@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <title>Hospital Login</title>
+    <script type="text/javascript" src="js/hospital-login.js">
+
+    </script>
+    <style media="screen">
+
+
+      body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background:#fff;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: ##6accd9;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: white;
+}
+
+.login-main-text h2{
+    font-weight: 500;
+}
+
+.btn-black{
+    background-color: #6accd9 !important;
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="sidenav" style="background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('img/hosp.jpg');background-repeat:no-repeat;background-size:cover;">
+    <img src="img/logo.png" class="img-rounded" alt="" style="margin:20px;" >
+         <div class="login-main-text" >
+            <h2 style="font-size:40px">Hospital<br> Login</h2>
+            <p>Login or register from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form action="http://localhost/WEB/hospital-login.php" method="post">
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" id="uname" name="uname" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-black" onclick="validate();">Login</button>
+                  <!-- <button type="submit" class="btn btn-black">Register</button> -->
+               </form>
+               <p>Don't have an account? <a href="hospital-signup.html">Register Here</a></p>
+               <p>A Doctor? <a href="doctor-login.html">Login Here</a></p>
+
+            </div>
+         </div>
+      </div>
+
+  </body>
+</html>

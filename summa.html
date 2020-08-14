@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      arr1=['11-12-1999','12-12-1999','13-12-1999'];
+      arr2=['09:00-10:00','10:00-11:00','11:00-12:00'];
+      var i,j;
+      var ans;
+      var vals=[];
+      for(i=0;i<arr1.length;i++)
+      {
+        for(j=0;j<arr2.length;j++)
+        {
+          ans=arr1[i]+" "+arr2[j];
+          vals.push(ans);
+        }
+      }
+      document.write(vals);
+    //  var d=new Date().toISO
+      let today = new Date().toISOString().slice(0, 10);
+      var d = (new Date()).toString().split(' ').splice(1,3).join('-');
+      var tomorrow = new Date();
+      tomorrow.setDate(new Date().getDate()+1);
+      var n= new Date();
+      n.setDate(new Date().getDate()+2);
+      var o = new Date();
+      o.setDate(new Date().getDate()+3);
+
+      document.write(today,d,tomorrow,n,o);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
